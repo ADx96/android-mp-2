@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<Movie> MovieData = new ArrayList<>();
-       Movie m = new Movie("avenfers1",1.5,7,2010,R.drawable.Avengers1);
-       Movie a =  new Movie("avengers2",2,7,2013,R.drawable.Avengers2);
-        Movie b =  new Movie("avengers3",2,8,2017,R.drawable.Avengers3);
-        Movie c =  new Movie("avengers4",2,7,2019,R.drawable.Avengers4);
+       Movie m = new Movie("Avengers1",1.5,7,2010,R.drawable.avengers1);
+       Movie a =  new Movie("Avengers2",2,7,2013,R.drawable.avengers2);
+        Movie b =  new Movie("Avengers3",2,8,2017,R.drawable.avengers3);
+        Movie c =  new Movie("Avengers4",2,7,2019,R.drawable.avengers4);
 
 MovieData.add(m);
 MovieData.add(a);

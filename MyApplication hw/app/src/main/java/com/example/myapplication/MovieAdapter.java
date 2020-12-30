@@ -43,8 +43,8 @@ public class MovieAdapter extends RecyclerView.Adapter  {
         //connecting to movie_list_item xml
         ((ViewHolder) holder).rating.setText(mArray.get(position).getRating()+"");
         ((ViewHolder) holder).duration.setText(mArray.get(position).getDuration()+"");
-        ((ViewHolder) holder).year.setText(mArray.get(position).getYear());
-        ((ViewHolder) holder).rating.setText(mArray.get(position).getName());
+        ((ViewHolder) holder).year.setText(mArray.get(position).getYear()+"");
+        ((ViewHolder) holder).name.setText(mArray.get(position).getName());
         ((ViewHolder) holder).img.setImageResource(mArray.get(position).getImg());
     }
 
@@ -64,11 +64,11 @@ public class MovieAdapter extends RecyclerView.Adapter  {
         {
             super(itemView);
             view = itemView;
-            img = itemView.findViewById(id.img1);
-            name = itemView.findViewById(id.name);
-            duration = itemView.findViewById(id.duration);
-            rating = itemView.findViewById(id.rating);
-            year = itemView.findViewById(id.year);
+            img = view.findViewById(id.img1);
+            name = view.findViewById(id.name);
+            duration = view.findViewById(id.duration);
+            rating = view.findViewById(id.rating);
+            year = view.findViewById(id.year);
         }
     }
 }
